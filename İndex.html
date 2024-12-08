@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekolojik Kredi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Ekolojik Kredi Logo" class="logo-img">
+            <h1>Ekolojik Kredi</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar (Menu) -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#hazirlayanlar">Hazırlayanlar</a></li>
+                <li><a href="#ekolojikKredi">Ekolojik Kredi Nedir?</a></li>
+                <li><a href="#geriDönüşüm">Geri Dönüşüm Nedir?</a></li>
+                <li><a href="#bizeUlasin">Bize Ulaşın</a></li>
+                <li><a href="https://youtube.com/@ekolojikkredi?si=038d_q53wpNtZt5d" target="_blank">Ekolojik Hediye YouTube</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <section id="hazirlayanlar">
+                <h2>Hazırlayanlar</h2>
+                <p>Bu projeyi hazırlayan ekip, çevre dostu projelerle dünyamızı daha iyi bir yer yapmak için çalışıyor...</p>
+            </section>
+
+            <section id="ekolojikKredi">
+                <h2>Ekolojik Kredi Nedir?</h2>
+                <p>Ekolojik Kredi, çevre dostu davranışları ödüllendiren bir sistemdir. Atık ayrıştırma, geri dönüşüm ve diğer çevresel eylemlerle kredi kazanılır...</p>
+            </section>
+
+            <section id="geriDönüşüm">
+                <h2>Geri Dönüşüm Nedir?</h2>
+                <p>Geri dönüşüm, atıkların yeniden kullanılabilir hale getirilmesi sürecidir. Bu işlem doğal kaynakları korur ve çevreyi temiz tutar...</p>
+            </section>
+
+            <section id="bizeUlasin">
+                <h2>Bize Ulaşın</h2>
+                <p>E-posta: <a href="mailto:ekolojikkreditubitak@gmail.com">ekolojikkreditubitak@gmail.com</a></p>
+                <p>Adres: Torbalı Anadolu Lisesi</p>
+            </section>
+
+            <section class="buttons">
+                <button class="register-btn" onclick="showRegistrationForm()">Kayıt Ol</button>
+                <button class="data-entry-btn" onclick="showDataEntryForm()">Veri Girişi</button>
+                <button class="view-data-btn" onclick="showDataView()">Veri Görüntüle</button>
+            </section>
+
+            <section id="goals">
+                <h2>Hedefler ve Unvanlar</h2>
+                <p>Hedeflerinizi ve unvanlarınızı takip edebilirsiniz. Her bir başarı, ekolojik kredinizle ödüllendirilecektir.</p>
+                <p>Örnek: 1000 puana ulaştığınızda "Yeşil Lider" unvanını kazanabilirsiniz.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for Registration Form -->
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2>Öğrenci/Kayıt Formu</h2>
+            <form id="registration-form">
+                <label for="name">İsim:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Soyisim:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="school">Okul Adı:</label>
+                <input type="text" id="school" name="school" required>
+
+                <label for="city">İl:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="district">İlçe:</label>
+                <input type="text" id="district" name="district" required>
+
+                <label for="school-number">Okul Numarası:</label>
+                <input type="text" id="school-number" name="school-number" required>
+
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
